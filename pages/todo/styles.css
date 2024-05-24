@@ -107,10 +107,12 @@ li p {
 
 .edit-button {
   right: 45px;
+  border: none;
 }
 
 .remove-button {
   right: 10px;
+  border: none;
 }
 
 .dialog-overlay {
