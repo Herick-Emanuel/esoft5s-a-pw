@@ -21,7 +21,11 @@ td {
 /* Estilos gerais */
 
 body {
+<<<<<<< HEAD
   font-family: "Arial", sans-serif;
+=======
+  font-family: 'Arial', sans-serif;
+>>>>>>> 0cfd18a5547083cd935b1c51c65de2ca008a818b
   color: #333;
   background-color: #f4f4f4;
   height: 100vh;
@@ -172,7 +176,11 @@ nav a:hover {
 }
 
 #curiosidades li::marker {
+<<<<<<< HEAD
   content: "🔍";
+=======
+  content: '🔍';
+>>>>>>> 0cfd18a5547083cd935b1c51c65de2ca008a818b
 }
 
 #curiosidades ul {
@@ -225,12 +233,20 @@ footer a {
   transition: opacity 0.3s ease-in-out;
 }
 
+<<<<<<< HEAD
 a[target="_blank"] {
+=======
+a[target='_blank'] {
+>>>>>>> 0cfd18a5547083cd935b1c51c65de2ca008a818b
   color: #4592c4;
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 a[target="_blank"]:hover {
+=======
+a[target='_blank']:hover {
+>>>>>>> 0cfd18a5547083cd935b1c51c65de2ca008a818b
   opacity: 0.8;
 }
 
@@ -256,6 +272,7 @@ footer a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 footer a[href*="#"] {
   color: white;
 }
@@ -265,6 +282,17 @@ footer a[href*="mailto"] {
 }
 
 footer a[href*="tel"] {
+=======
+footer a[href*='#'] {
+  color: white;
+}
+
+footer a[href*='mailto'] {
+  color: orangered;
+}
+
+footer a[href*='tel'] {
+>>>>>>> 0cfd18a5547083cd935b1c51c65de2ca008a818b
   color: limegreen;
 }
 
@@ -286,4 +314,8 @@ footer a[href]:hover {
 main > section,
 main > article {
   animation: fadeIn 0.5s ease-in-out forwards;
+<<<<<<< HEAD
 } */
+=======
+} */
+>>>>>>> 0cfd18a5547083cd935b1c51c65de2ca008a818b
