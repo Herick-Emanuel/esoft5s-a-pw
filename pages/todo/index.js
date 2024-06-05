@@ -1,8 +1,7 @@
 const taskKey = "@tasks";
 
-// Função para adicionar tarefa
 function addTask(event) {
-  event.preventDefault(); // Evita o recarregamento da página
+  event.preventDefault();
   const taskId = new Date().getTime();
   const taskList = document.querySelector("#taskList");
 
@@ -24,7 +23,6 @@ function addTask(event) {
 
   taskList.appendChild(li);
 
-  // Salvar tarefas no localStorage
   const tasks = JSON.parse(localStorage.getItem(taskKey)) || [];
   tasks.push({ id: taskId, title: taskTitle, description: taskDescription });
   localStorage.setItem(taskKey, JSON.stringify(tasks));
@@ -34,7 +32,6 @@ function addTask(event) {
   addTaskButtonsListeners(li);
 }
 
-// Carregar tarefas do localStorage ao recarregar a página
 window.addEventListener("DOMContentLoaded", () => {
   const tasks = JSON.parse(localStorage.getItem(taskKey)) || [];
   const taskList = document.querySelector("#taskList");
@@ -104,7 +101,6 @@ function openEditDialog(li) {
     const editTitle = document.querySelector("#editTitle").value;
     const editDescription = document.querySelector("#editDescription").value;
 
-    // Atualizar a tarefa no localStorage
     const tasks = JSON.parse(localStorage.getItem(taskKey)) || [];
     const taskIndex = tasks.findIndex((task) => task.id === parseInt(li.id));
     if (taskIndex !== -1) {
@@ -113,7 +109,6 @@ function openEditDialog(li) {
       localStorage.setItem(taskKey, JSON.stringify(tasks));
     }
 
-    // Atualizar a tarefa na lista
     li.querySelector("h2").textContent = editTitle;
     li.querySelector("p").textContent = editDescription;
 
@@ -122,11 +117,9 @@ function openEditDialog(li) {
 }
 
 function removeTask(li) {
-  // Remover a tarefa do localStorage
   const tasks = JSON.parse(localStorage.getItem(taskKey)) || [];
   const updatedTasks = tasks.filter((task) => task.id !== parseInt(li.id));
   localStorage.setItem(taskKey, JSON.stringify(updatedTasks));
 
-  // Remover a tarefa da lista
   li.remove();
 }
