@@ -1,5 +1,5 @@
-"use client";
 import React from "react";
+import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./Components/header";
 import CardSection from "./Components/cardSection";
@@ -10,9 +10,11 @@ export default function Home() {
       <Header titulo="Squirtle" />
       <CardSection titulo="Informações sobre Squirtle">
         <p>
-          <img
+          <Image
             src="https://img.pokemondb.net/artwork/squirtle.jpg"
             alt="Squirtle"
+            width={200}
+            height={200}
           />{" "}
           Squirtle é um Pokémon do tipo Água. É o Pokémon inicial da região de
           Kanto e evolui para Wartortle.
@@ -85,23 +87,29 @@ export default function Home() {
       <CardSection titulo="Evoluções">
         <div className="evolutions">
           <div>
-            <img
+            <Image
               src="https://img.pokemondb.net/artwork/squirtle.jpg"
               alt="Squirtle"
+              width={200}
+              height={200}
             />
             <p>1. Squirtle</p>
           </div>
           <div>
-            <img
+            <Image
               src="https://img.pokemondb.net/artwork/wartortle.jpg"
               alt="Wartortle"
+              width={200}
+              height={200}
             />
             <p>2. Wartortle</p>
           </div>
           <div>
-            <img
+            <Image
               src="https://img.pokemondb.net/artwork/blastoise.jpg"
               alt="Blastoise"
+              width={200}
+              height={200}
             />
             <p>3. Blastoise</p>
           </div>
