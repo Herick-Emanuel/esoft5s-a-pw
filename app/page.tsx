@@ -11,7 +11,7 @@ export default function Home() {
       <CardSection titulo="Informações sobre Squirtle">
         <p>
           <Image
-            src='https://img.pokemondb.net/artwork/squirtle.jpg'
+            src="https://img.pokemondb.net/artwork/squirtle.jpg"
             alt="Squirtle"
             width={200}
             height={200}
@@ -31,7 +31,7 @@ export default function Home() {
         <ul>
           <li>🔍 Squirtle é um dos Pokémon mais populares e adoráveis.</li>
           <li>
-            🔍 Seu nome deriva das palavras "squirrel" (esquilo) e "turtle"
+            🔍 Seu nome deriva das palavras &quot;squirrel&quot; (esquilo) e &quot;turtle&quot;
             (tartaruga).
           </li>
           <li>
@@ -66,7 +66,7 @@ export default function Home() {
         <ul>
           <li>
             <a
-              href='https://pokemondb.net/pokedex/squirtle'
+              href="https://pokemondb.net/pokedex/squirtle"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -85,10 +85,10 @@ export default function Home() {
         </ul>
       </CardSection>
       <CardSection titulo="Evoluções">
-        <div className="evolutions">
+        <div className={styles.evolutions}>
           <div>
             <Image
-              src='https://img.pokemondb.net/artwork/squirtle.jpg'
+              src="https://img.pokemondb.net/artwork/squirtle.jpg"
               alt="Squirtle"
               width={200}
               height={200}
@@ -97,7 +97,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src='https://img.pokemondb.net/artwork/wartortle.jpg'
+              src="https://img.pokemondb.net/artwork/wartortle.jpg"
               alt="Wartortle"
               width={200}
               height={200}
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src='https://img.pokemondb.net/artwork/blastoise.jpg'
+              src="https://img.pokemondb.net/artwork/blastoise.jpg"
               alt="Blastoise"
               width={200}
               height={200}
